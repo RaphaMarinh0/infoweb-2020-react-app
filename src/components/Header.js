@@ -1,6 +1,6 @@
 import react from 'react';
 
-export default function Header(){
+export default function Header(props){
     return (
       <header className="masthead bg-primary text-white text-center">
         <div className="container d-flex align-items-center flex-column">
@@ -12,7 +12,7 @@ export default function Header(){
           />
           {/* Masthead Heading*/}
           <h1 className="masthead-heading text-uppercase mb-0">
-            Start Bootstrap
+            {props.title}
           </h1>
           {/* Icon Divider*/}
           <div className="divider-custom divider-light">
